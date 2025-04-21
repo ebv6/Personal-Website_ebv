@@ -1,0 +1,116 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #DFEBF6; /* Soft Frost */
+  color: #29353C; /* Main text */
+}
+
+/* Header */
+header {
+  background: #29353C; /* Dark Navy */
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+header p {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+/* Navigation */
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  color: #AAC7D8; /* Icy Blue */
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  color: #DFEBF6;
+  text-decoration: underline;
+}
+
+/* Main Content */
+main section {
+  background: white;
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Section Headings */
+h2 {
+  color: #44576D; /* Steel Blue */
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+/* Gallery Styling */
+#gallery div {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#gallery img {
+  width: 280px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 3px solid #AAC7D8; /* Accent border */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Info */
+#contact a {
+  color: #44576D; /* Steel Blue */
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: #E6E6E6; /* Light Gray */
+  color: #29353C;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+/* Responsive Navigation */
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  #gallery div {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+  
