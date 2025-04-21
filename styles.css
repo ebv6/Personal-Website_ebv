@@ -54,6 +54,7 @@ main section {
   max-width: 800px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
 }
 
 /* Section Headings */
@@ -61,6 +62,16 @@ h2 {
   color: #44576D; /* Steel Blue */
   font-size: 1.8rem;
   margin-bottom: 15px;
+}
+
+/* Section Icons / Images */
+main section img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Gallery Styling */
@@ -75,12 +86,12 @@ h2 {
 /* Each image box */
 .gallery-item {
   width: 300px;
-  height: auto; /* Let it grow based on image */
-  background-color: transparent; /* No inner white box */
+  height: auto;
+  background-color: transparent;
   border: 3px solid #AAC7D8;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  overflow: hidden; /* Keeps image inside the border */
+  overflow: hidden;
 }
 
 /* Actual image */
@@ -92,23 +103,41 @@ h2 {
   border-radius: 0;
 }
 
-/* Project Bubbles (Cards) */
-.project-card {
-    background-color: #ffffff;
-    border-radius: 12px;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 700px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-    border: 1px solid #E6E6E6;
-  }
-  
-  /* Each Project Section Container */
-  .project-section {
-    padding: 0;
-    margin-bottom: 30px;
-  }  
+/* Project Intro Section */
+.project-intro {
+  background: white;
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
 
+/* Project Card List Wrapper */
+.project-list {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+/* Individual Project Card */
+.project-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  border: 1px solid #E6E6E6;
+  text-align: left;
+}
+
+/* Optional legacy section spacing (safe to keep) */
+.project-section {
+  padding: 0;
+  margin-bottom: 30px;
+}
 
 .project-card h3 {
   color: #44576D;
@@ -154,5 +183,9 @@ footer {
 
   .gallery-item {
     width: 90%;
+  }
+
+  .project-list {
+    padding: 0 10px;
   }
 }
