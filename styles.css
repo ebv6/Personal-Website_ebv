@@ -80,13 +80,14 @@ h2 {
 
 /* ========== GALLERY ========== */
 #gallery .gallery-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  padding-top: 10px;
-  align-items: flex-start;
-}
+        display: flex;
+        justify-content: center;
+        align-items: center;     
+        flex-wrap: wrap;
+        gap: 20px;
+        padding-top: 10px;
+      }      
+
 
 .gallery-item {
   width: 300px;
