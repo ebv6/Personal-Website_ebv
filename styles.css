@@ -48,12 +48,9 @@ nav a:hover {
 
 /* Main Content */
 main section {
-  background: white;
   padding: 30px;
   margin: 30px auto;
   max-width: 800px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   text-align: center;
 }
 
@@ -123,14 +120,26 @@ main section img {
   padding: 0 20px;
 }
 
-/* Individual Project Card */
+/* Individual Project Card (no border) */
 .project-card {
   background-color: #ffffff;
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-  border: 1px solid #E6E6E6;
   text-align: left;
+}
+
+/* Project Card Typography */
+.project-card h3 {
+  color: #44576D;
+  margin-top: 0;
+}
+
+.project-card p,
+.project-card li {
+  color: #29353C;
+  margin-bottom: 0;
+  line-height: 1.6;
 }
 
 /* Optional legacy section spacing (safe to keep) */
@@ -139,14 +148,14 @@ main section img {
   margin-bottom: 30px;
 }
 
-.project-card h3 {
-  color: #44576D;
-  margin-top: 0;
+/* Project List Items */
+.project-card ul {
+  padding-left: 20px;
+  margin-top: 10px;
 }
 
-.project-card p {
-  color: #29353C;
-  margin-bottom: 0;
+.project-card li {
+  margin-bottom: 10px;
 }
 
 /* Contact Info */
