@@ -46,12 +46,19 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Main Content */
+/* Main Section (default – no background) */
 main section {
-  padding: 30px;
   margin: 30px auto;
   max-width: 800px;
   text-align: center;
+}
+
+/* Optional White Bubble Section */
+.bubble-section {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 /* Section Headings */
@@ -101,13 +108,9 @@ main section img {
 }
 
 /* Project Intro Section */
-.project-intro {
-  background: white;
+.project-intro.bubble-section {
   padding: 30px;
   margin: 30px auto;
-  max-width: 800px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 /* Project Card List Wrapper */
@@ -129,7 +132,7 @@ main section img {
   text-align: left;
 }
 
-/* Project Card Typography */
+/* Project Card Text */
 .project-card h3 {
   color: #44576D;
   margin-top: 0;
@@ -142,12 +145,6 @@ main section img {
   line-height: 1.6;
 }
 
-/* Optional legacy section spacing (safe to keep) */
-.project-section {
-  padding: 0;
-  margin-bottom: 30px;
-}
-
 /* Project List Items */
 .project-card ul {
   padding-left: 20px;
@@ -156,6 +153,12 @@ main section img {
 
 .project-card li {
   margin-bottom: 10px;
+}
+
+/* Optional legacy section spacing (safe to keep) */
+.project-section {
+  padding: 0;
+  margin-bottom: 30px;
 }
 
 /* Contact Info */
