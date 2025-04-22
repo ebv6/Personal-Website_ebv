@@ -1,7 +1,7 @@
 /* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
 
-/* General Styles */
+/* ========== GENERAL STYLES ========== */
 body {
   margin: 0;
   padding: 0;
@@ -17,9 +17,10 @@ h1, h2, h3 {
 
 p {
   line-height: 1.6;
+  margin: 0 0 10px;
 }
 
-/* Header */
+/* ========== HEADER ========== */
 header {
   background: #29353C;
   color: white;
@@ -37,7 +38,7 @@ header p {
   font-size: 1.2rem;
 }
 
-/* Navigation */
+/* ========== NAVIGATION ========== */
 nav {
   margin-top: 15px;
 }
@@ -55,14 +56,13 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Main Section Defaults */
+/* ========== MAIN LAYOUT ========== */
 main section {
   margin: 30px auto;
   max-width: 800px;
   text-align: center;
 }
 
-/* Bubble Section Styling */
 .bubble-section {
   background: white;
   padding: 30px;
@@ -72,43 +72,46 @@ main section {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-/* Section Headings */
 h2 {
   color: #44576D;
   font-size: 1.8rem;
   margin-bottom: 15px;
 }
 
-/* ===================== GALLERY ===================== */
+/* ========== GALLERY ========== */
 #gallery .gallery-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
   padding-top: 10px;
+  align-items: flex-start;
 }
 
 .gallery-item {
-  width: 280px;
-  background-color: transparent;
+  width: 300px;
+  margin: 0;
+  padding: 0;
   border: 3px solid #AAC7D8;
   border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  padding: 0;
+  background-color: transparent;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: block;
+  line-height: 0;
 }
 
 .gallery-item img {
-  display: block;
   width: 100%;
   height: auto;
+  display: block;
   object-fit: cover;
+  border-radius: 0;
   margin: 0;
   padding: 0;
-  border-radius: 10px;
 }
 
-/* Contact Links */
+/* ========== CONTACT SECTION ========== */
 #contact a {
   color: #44576D;
   text-decoration: none;
@@ -118,7 +121,7 @@ h2 {
   text-decoration: underline;
 }
 
-/* Footer */
+/* ========== FOOTER ========== */
 footer {
   background: #E6E6E6;
   color: #29353C;
@@ -128,7 +131,7 @@ footer {
   margin-top: 40px;
 }
 
-/* Responsive */
+/* ========== RESPONSIVE ========== */
 @media (max-width: 600px) {
   nav a {
     display: block;
@@ -144,4 +147,5 @@ footer {
     width: 90%;
   }
 }
+
 
