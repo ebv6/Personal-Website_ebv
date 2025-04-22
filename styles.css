@@ -67,7 +67,7 @@ main section {
   background: white;
   padding: 30px;
   margin: 30px auto;
-  max-width: 800px;
+  max-width: 900px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
@@ -79,18 +79,7 @@ h2 {
   margin-bottom: 15px;
 }
 
-/* Section Images / Icons (non-gallery) */
-main section img {
-  width: 80px;
-  height: auto;
-  margin-bottom: 15px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /* ===================== GALLERY ===================== */
-
 #gallery .gallery-grid {
   display: flex;
   flex-wrap: wrap;
@@ -100,80 +89,23 @@ main section img {
 }
 
 .gallery-item {
-  width: 300px;
+  width: 280px;
   background-color: transparent;
   border: 3px solid #AAC7D8;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  padding: 0;
 }
 
 .gallery-item img {
+  display: block;
   width: 100%;
   height: auto;
-  display: block;
   object-fit: cover;
-  border-radius: 0;
-}
-
-/* Optional caption (if you add <p> under image) */
-.gallery-item p {
-  padding: 10px;
-  color: #44576D;
-  font-weight: 500;
-  font-size: 0.95rem;
-  background-color: #F7FAFC;
   margin: 0;
-}
-
-/* =============== PROJECT CARDS (OPTIONAL USE) =============== */
-
-.project-intro.bubble-section {
-  padding: 30px;
-  margin: 30px auto;
-}
-
-.project-list {
-  max-width: 800px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 0 20px;
-}
-
-.project-card {
-  background-color: #ffffff;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-  text-align: left;
-}
-
-.project-card h3 {
-  color: #44576D;
-  margin-top: 0;
-}
-
-.project-card p,
-.project-card li {
-  color: #29353C;
-  margin-bottom: 0;
-  line-height: 1.6;
-}
-
-.project-card ul {
-  padding-left: 20px;
-  margin-top: 10px;
-}
-
-.project-card li {
-  margin-bottom: 10px;
-}
-
-.project-section {
   padding: 0;
-  margin-bottom: 30px;
+  border-radius: 10px;
 }
 
 /* Contact Links */
@@ -211,8 +143,5 @@ footer {
   .gallery-item {
     width: 90%;
   }
-
-  .project-list {
-    padding: 0 10px;
-  }
 }
+
