@@ -12,7 +12,7 @@ body {
 
 /* Header */
 header {
-  background: #29353C; /* Dark Navy */
+  background: #29353C;
   color: white;
   text-align: center;
   padding: 40px 20px;
@@ -34,7 +34,7 @@ nav {
 }
 
 nav a {
-  color: #AAC7D8; /* Icy Blue */
+  color: #AAC7D8;
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
@@ -46,29 +46,31 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Main Section (default – no background) */
+/* Main Section Defaults */
 main section {
   margin: 30px auto;
   max-width: 800px;
   text-align: center;
 }
 
-/* Optional White Bubble Section */
+/* White Bubble Card Section */
 .bubble-section {
   background: white;
   padding: 30px;
+  margin: 30px auto;
+  max-width: 800px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 /* Section Headings */
 h2 {
-  color: #44576D; /* Steel Blue */
+  color: #44576D;
   font-size: 1.8rem;
   margin-bottom: 15px;
 }
 
-/* Section Icons / Images */
+/* Section Images / Icons */
 main section img {
   width: 80px;
   height: auto;
@@ -78,7 +80,7 @@ main section img {
   margin-right: auto;
 }
 
-/* Gallery Styling */
+/* Gallery Section */
 #gallery .gallery-grid {
   display: flex;
   flex-wrap: wrap;
@@ -87,7 +89,6 @@ main section img {
   padding-top: 10px;
 }
 
-/* Each image box */
 .gallery-item {
   width: 300px;
   height: auto;
@@ -98,7 +99,6 @@ main section img {
   overflow: hidden;
 }
 
-/* Actual image */
 .gallery-item img {
   width: 100%;
   height: auto;
@@ -123,7 +123,7 @@ main section img {
   padding: 0 20px;
 }
 
-/* Individual Project Card (no border) */
+/* Project Cards */
 .project-card {
   background-color: #ffffff;
   border-radius: 12px;
@@ -132,7 +132,6 @@ main section img {
   text-align: left;
 }
 
-/* Project Card Text */
 .project-card h3 {
   color: #44576D;
   margin-top: 0;
@@ -145,7 +144,6 @@ main section img {
   line-height: 1.6;
 }
 
-/* Project List Items */
 .project-card ul {
   padding-left: 20px;
   margin-top: 10px;
@@ -155,15 +153,15 @@ main section img {
   margin-bottom: 10px;
 }
 
-/* Optional legacy section spacing (safe to keep) */
+/* Optional Legacy Section Spacing */
 .project-section {
   padding: 0;
   margin-bottom: 30px;
 }
 
-/* Contact Info */
+/* Contact Links */
 #contact a {
-  color: #44576D; /* Steel Blue */
+  color: #44576D;
   text-decoration: none;
 }
 
@@ -173,7 +171,7 @@ main section img {
 
 /* Footer */
 footer {
-  background: #E6E6E6; /* Light Gray */
+  background: #E6E6E6;
   color: #29353C;
   text-align: center;
   padding: 15px 0;
@@ -181,7 +179,7 @@ footer {
   margin-top: 40px;
 }
 
-/* Responsive Navigation */
+/* Responsive */
 @media (max-width: 600px) {
   nav a {
     display: block;
